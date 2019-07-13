@@ -8,9 +8,9 @@ WORKDIR /src
 # move scripts
 COPY scraper.py /src
 COPY requirements.txt /src
-COPY data_processing.py /src
+COPY utils.py /src
 COPY stopwords.py /src
-COPY conifg.py /src
+COPY config.py /src
 
 # install google chrome and chromedriver
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
