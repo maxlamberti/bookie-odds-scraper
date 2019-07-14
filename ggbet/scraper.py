@@ -16,7 +16,7 @@ DB_CREDENTIALS = {
 	'host': os.environ['DB_HOST'],
 	'user': os.environ['DB_USER'],
 	'password': os.environ['DB_PASSWORD'],
-	'db_name': os.environ['DB_NAME']
+	'dbname': os.environ['DB_NAME']
 }
 
 
