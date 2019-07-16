@@ -1,20 +1,6 @@
 
 
-ENVIRONMENT = 'PRODUCTION'
-
-
 GGBET_URL = 'https://gg.bet/en/counter-strike'
-
-
-SENTRY_URL = 'https://xxxxxxxxxxxx@sentry.io/xxxxxx'
-
-
-DB_CREDENTIALS = {
-    'host': 'xxx',
-    'user': 'xxx',
-    'password': 'xxx',
-    'dbname': 'xxx'
-}
 
 
 LOGGING = {
