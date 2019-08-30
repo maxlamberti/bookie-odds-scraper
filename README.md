@@ -1,5 +1,9 @@
 # bookie-odds-scraper
-Game odds scraper from bookie websites
+
+![python version](https://img.shields.io/badge/python-3.6-blue.svg)
+
+Containerized web scrapers for CSGO match odds data. 🎲
+
 
 ## Example Table for Odds Data
 
@@ -27,3 +31,8 @@ These scrapers are containerized using Docker and run on a schedule with AWS Far
 - Docker
 - AWS Fargate
 - Sentry
+
+## Contributors
+
+- [maxlamberti](https://github.com/maxlamberti)
+- [kevinramlal](https://github.com/kevinramlal)
