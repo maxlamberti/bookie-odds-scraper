@@ -5,7 +5,7 @@ import logging.config
 from selenium import webdriver
 
 from config import LOGGING, HLTV_URL
-from utils import transcribe_data
+from utils import transcribe_data, postgres_db_insert
 
 
 # get os config variables
