@@ -24,7 +24,14 @@ def calc_average_header_date(headers):
 	for header in headers:
 		if len(header) < 8:
 			continue
-		date = datetime.strptime(header[12:], '%B %dth %Y')
+
+		datestring = header[12:]
+		for suffix in ['nd', 'th', 'st', 'rd']:
+			datestring = datestring.replace(suffix, '')
+		datestring = datestring.split(' ')
+		datestring[0] = datestring[0][:3]  # cut month
+		datestring = ' '.join(datestring)
+		date = datetime.strptime(datestring, '%b %d %Y')
 		timestamp = int(date.timestamp())
 		dates.append(timestamp)
 
