@@ -1,6 +1,10 @@
 
 
 HLTV_URL = 'https://www.hltv.org/results?offset=100'
+HLTV_BASE_URL = 'https://www.hltv.org/results?offset='
+
+
+OFFSET_RANGE = (19300, 48000)  # (start, end)
 
 
 LOGGING = {
