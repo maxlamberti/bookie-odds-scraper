@@ -22,15 +22,11 @@ The very basic procedure of each scraper is the following:
 3. Transcribe the html tabular data into python data structures.
 4. Write the cleaned data to a database.
 
-These scrapers are containerized using Docker and run on a schedule with AWS Fargate. The containers access database credentials and a Sentry URL for monitoring via environment variables configured on each deployment. The container images can be found on [Docker Hub](https://hub.docker.com/u/maxlamberti).
+These scrapers are containerized using Docker and run on a schedule with AWS Fargate. The containers access database credentials and a Sentry URL for monitoring via environment variables configured on each deployment. The container images can be found on [Docker Hub](https://hub.docker.com/u/maxlamberti). A schematic of the production implementation can be found below.
 
-## Tech
+## Scraper System Schematic
 
-- Selenium
-- PostgreSQL
-- Docker
-- AWS Fargate
-- Sentry
+![System Schematic](data/Scraper_Schematic.png)
 
 ## Contributors
 
