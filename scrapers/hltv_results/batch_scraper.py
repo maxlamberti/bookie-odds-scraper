@@ -10,7 +10,6 @@ from utils import transcribe_table_data, calc_average_header_date, postgres_db_u
 
 # get os config variables
 ENVIRONMENT = os.environ['ENVIRONMENT']
-SENTRY_URL = os.environ['SENTRY_URL']
 DB_CREDENTIALS = {
 	'host': os.environ['DB_HOST'],
 	'user': os.environ['DB_USER'],

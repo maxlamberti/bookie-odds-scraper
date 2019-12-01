@@ -22,9 +22,8 @@ def calc_average_header_date(headers):
 	dates = []
 
 	for header in headers:
-		if len(header) < 8:
+		if (len(header) < 8) or (header == 'Featured results'):
 			continue
-
 		datestring = header[12:]
 		for suffix in ['nd', 'th', 'st', 'rd']:
 			datestring = datestring.replace(suffix, '')
@@ -58,6 +57,8 @@ def transcribe_table_data(text_table, match_time=-1):
 	processed_data = []
 
 	for text in text_table:
+		if len(text) == 0:
+			continue
 		hash_id = md5(text.encode('utf-8')).hexdigest()
 		team_1, score, team_2, tournament, matchtype = text.split('\n')
 		team_1_score, team_2_score = score.split(' - ')
